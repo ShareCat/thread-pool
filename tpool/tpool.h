@@ -7,7 +7,7 @@
 typedef struct tpool_work {
     void* (*work_routine)(void*); //function to be called
     void* args;                   //arguments
-    struct tool_work* next;
+    struct tpool_work* next;
 } tpool_work_t;
 
 typedef struct tpool {
