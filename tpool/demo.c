@@ -5,8 +5,8 @@
 
 void* fun(void* args)
 {
-    int thread = (int)args;
-    printf("running the thread of %d\n", thread);
+    printf("Thread #%u working on %d\n", (int)pthread_self(), (int) args);
+    usleep(10);
     return NULL;
 }
 
